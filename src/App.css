@@ -31,3 +31,40 @@
     transform: rotate(360deg);
   }
 }
+
+.dashboard{
+  width:400px;
+  margin: 0 auto;
+}
+.displayWrapper{
+  display:flex;
+  flex-direction: row;
+  padding: 0 1rem;
+}
+
+.displayName{
+  margin: 0 auto;
+  border:1px solid black;
+  padding: 1rem;
+}
+.strikesValue, .ballsValue {
+  border:1px solid black;
+  width: 1rem;
+  padding: .5rem;
+  transform: rotate(-90);
+}
+
+.strikes, .balls{
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.bottomButtons{
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+.bottomButtons button{
+  padding: 0 1rem;
+  margin: .5rem;
+}
