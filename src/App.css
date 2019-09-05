@@ -35,23 +35,27 @@
 .dashboard{
   width:400px;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 .displayWrapper{
   display:flex;
   flex-direction: row;
   padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .displayName{
   margin: 0 auto;
   border:1px solid black;
   padding: 1rem;
+  text-align: center;
 }
 .strikesValue, .ballsValue {
-  border:1px solid black;
-  width: 1rem;
+  border:5px solid black;
+  width: 2rem;
   padding: .5rem;
-  transform: rotate(-90);
+  text-align: center;
 }
 
 .strikes, .balls{
@@ -60,7 +64,8 @@
 }
 
 .bottomButtons{
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: .5rem;
 }
 
