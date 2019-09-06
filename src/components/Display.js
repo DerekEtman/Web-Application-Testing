@@ -4,17 +4,18 @@ export default function Display (props) {
 
     return (
         <div className="display-name">
-            <h1>Baseball.</h1>
-            <div className="strikes">
-                <div className="strikesTitle">Strikes</div>
-                <div className="strikesValue">{props.value}</div>
-            </div>
+                <h1>Baseball.</h1>
+                <div className="displayWrapper">
+                 <div className="strikes">
+                     <div className="strikesTitle">Strikes</div>
+                     <div className="strikesValue">{props.strike}</div>
+                 </div>
 
-            <div className="balls">
-                <div className="ballsTitle">Ball</div>
-                <div className="ballsValue">0</div>
-            </div>
-
+                 <div className="balls">
+                     <div className="ballsTitle">Ball</div>
+                     <div className="ballsValue">{props.ball}</div>
+                 </div>
+                </div>
         </div>
     )
 }
