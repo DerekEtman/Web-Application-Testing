@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Dashboard from './components/Dashboard';
 
 function App() {
 
   return (
-    <div>  
+    <div className="appContainer">  
       <Dashboard />
     </div>
   );

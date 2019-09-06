@@ -3,14 +3,14 @@ import { Container } from 'semantic-ui-react'
 import Display from './Display';
 
 export default function Dashboard () {
-
-    const [strike, setStrike] = useState(0);
-    const [ball, setBall] = useState(0);
-
     function resetPoints() {
         setStrike(0);
         setBall(0);
     }
+
+    const [strike, setStrike] = useState(0);
+    const [ball, setBall] = useState(0);
+
 
     function getStrike()  {
         strike === 3? resetPoints() : setStrike(strike + 1);
@@ -31,23 +31,8 @@ export default function Dashboard () {
     return(
         <Container>
         <div className="dashboard">
-            <div className="displayName">
-                <h1>Baseball.</h1>
-                <div className="displayWrapper">
-                 <div className="strikes">
-                     <div className="strikesTitle">Strikes</div>
-                     <div className="strikesValue">{strike}</div>
-                 </div>
-
-                 <div className="balls">
-                     <div className="ballsTitle">Ball</div>
-                     <div className="ballsValue">{ball}</div>
-                 </div>
-                </div>
-            </div>
-
+                <Display strike={strike} ball={ball} />
             <div className="bottomButtons">
-                {/* <Display /> */}
                 <button onClick={getStrike}>Strike</button>
                 <button onClick={getBall}>Ball</button>
                 <button onClick={getFowl}>Foul</button>
