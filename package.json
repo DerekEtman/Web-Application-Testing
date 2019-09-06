@@ -6,8 +6,7 @@
     "@testing-library/react": "^9.1.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "semantic-ui-react": "^0.88.0"
+    "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,6 +30,6 @@
     ]
   },
   "devDependencies": {
-    "jest-dom": "^4.0.0"
+    "jest": "^24.9.0"
   }
 }
