@@ -31,3 +31,61 @@
     transform: rotate(360deg);
   }
 }
+.appContainer{
+  border-bottom: 1px solid black;
+  width: 450px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  /* box-shadow: 0px 15px 19px -7px rgba(0,0,0,0.37); */
+
+}
+
+.dashboard{
+  width:400px;
+  margin: 0 auto;
+}
+
+.displayName{
+  margin: 0 auto;
+  border:1px solid black;
+  padding: 1rem;
+}
+
+.innerWrapper{
+  display:grid;
+  grid-template-columns: repeat(2, 25% [col-start]);
+  padding: 0 1rem;
+  border:1px solid black;
+}
+.strikesValue, .ballsValue {
+  border:1px solid black;
+  width: 1rem;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.strikes, .balls{
+  padding: .5rem;
+  margin: 1rem;
+  text-align: start;
+
+}
+
+.bottomButtons{
+  display:grid;
+  grid-template-columns: repeat(4, 25% [col-start]);
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+.bottomButtons button{
+  background-color:white;
+  border: 1px groove black;
+  padding: 0 1rem;
+  margin: .5rem;
+}
+button:hover{
+  background-color:black;
+  color:white;
+  box-shadow: 0px 15px 19px -7px rgba(109, 245, 143, 0.9);
+}
